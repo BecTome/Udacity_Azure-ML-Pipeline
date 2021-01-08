@@ -36,7 +36,7 @@ This dataset contains data about clients of a bank in 3 main categories:
     3. Split data in train and test.
     4. Using `scikit-learn`'s `LogisticRegressionClassifier` with the maximum number of iterations (`max_iter`; discrete) and the regularisation parameter `C`, which is continuous.
 
-* **Hyperparameter Tuning**: `train.py` accepts `max_iter` and `C`as script arguments. This is important in order to optimise them using `Azure Hyperdrive`. A higher number of iterations or a high value of `C` (inversely proportional to regularization) can lead to overfitting so it's important to find a good tradeoff between both of them. Default values: `max_iter` equal to 100 and `C` equal to 1.
+* **Hyperparameter Tuning**: `train.py` accepts `max_iter` and `C` as script arguments. This is important in order to optimise them using `Azure Hyperdrive`. A higher number of iterations or a high value of `C` (inversely proportional to regularization) can lead to overfitting so it's important to find a good tradeoff between both of them. Default values: `max_iter` equal to 100 and `C` equal to 1.
 
 * **Classification Algorithm**: `scikit-learn` is the most popular machine learning library for Python. It contains a huge variety of classification algorithms. Among them, Logistic Regression has been the chosen one because, although it's not the most powerful, it is one of the most explainable and easy to tune (not so many hyperparameters).
 
