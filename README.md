@@ -124,5 +124,15 @@ To avoid this, there are techniques like, for example, resampling. However, the 
 
 My proposal is either **changing the metric to maximize** to a macro one or trying to **fix unbalancing problems** by resampling (under or oversampling) the data.
 
+
+**Why does this improve the model?**
+
+We don't want a high accuracy model but an useful one. If we solve the class calancing problem, we make our solution much reliable. In this problem, each True Positive means the detection of potential clients and it can be translated into direct benefits for the company.
+
+* **Current Model**: Performs well in excluding non-potential future clients (96% of True Negatives) but quite poorly in new clients detection (53% True Positives).
+
+* **Proposed Model**: It's expected to improve significantly the ratio of True Positives so that increases the probability of finding appropriate new clients.
+
+
 ## Proof of cluster clean up
 ![cluster_deletion](img/cluster_deletion.png)
